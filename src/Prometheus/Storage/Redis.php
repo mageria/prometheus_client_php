@@ -46,6 +46,11 @@ class Redis implements Adapter
         $this->redis = new \Redis();
     }
 
+    public function getRedisInstance() 
+    {
+        return $this->redis;
+    }
+
     /**
      * @param array $options
      */
